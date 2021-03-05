@@ -1,0 +1,10 @@
+<%-include("./partials/header")%>
+    <h1><%=movieData.Title%></h1>
+    <img src="<%=movieData.Poster%>" alt="Image not found">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h2 class="display-4"><%=movieData.Genre%></h2>
+          <p class="lead">Plot: <%=movieData.Plot%></p>
+        </div>
+      </div>
+<%-include("./partials/footer")%>
