@@ -38,6 +38,6 @@ app.get("/result/:id",(req,res)=>{1
 app.get("*",(req,res)=>{
     res.send("Illegal response")
 })
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("Server has started")
 })
